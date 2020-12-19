@@ -33,7 +33,7 @@ namespace NewDemo.Controllers
                 {
                     UserAge = i,
                     UserName = "ershao",
-                    Gender = "男"
+                    Gender = "女"
                 };
                 list.Add(user);
             }
