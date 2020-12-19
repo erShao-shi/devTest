@@ -23,5 +23,21 @@ namespace NewDemo.Controllers
                 Gender = "男"
             };
         }
+        [HttpGet]
+        public List<UserInfo> GetUsers()
+        {
+            List<UserInfo> list = new List<UserInfo>();
+            for(int i = 0; i < 2; i++)
+            {
+                UserInfo user = new UserInfo()
+                {
+                    UserAge = i,
+                    UserName = "ershao",
+                    Gender = "男"
+                };
+                list.Add(user);
+            }
+            return list;
+        }
     }
 }
